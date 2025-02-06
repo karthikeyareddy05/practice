@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decathlon - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('store-background.jpg') no-repeat center center/cover;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: rgba(0, 123, 255, 0.9);
+            color: white;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            animation: slideDown 1s ease-in-out;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 18px;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            padding: 60px;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 25px;
+            background: #ff5722;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: transform 0.3s;
+        }
+
+        .btn:hover {
+            background: #e64a19;
+            transform: scale(1.1);
+        }
+
+        /* Customer Section */
+        .customer-section {
+            padding: 50px;
+            background: white;
+        }
+
+        .customer-images img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .customer-images img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Decathlon</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Login</a>
+            <a href="userinfor.html">User card</a> 
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h2>Best Online Shopping Experience</h2>
+        <p>Shop the latest products at the best prices. Fast delivery and top brands.</p>
+        <a href="signup.html" class="btn">Join Now</a>
+    </section>
+    
+    <section class="customer-section">
+        <h2>Happy Customers</h2>
+        <div class="customer-images">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTecxhE45TZSoM-trtS6aG9lpT73I9R_uHQ4w&s" alt="Happy Customer 1">
+            <img src="https://media.istockphoto.com/id/1416442664/photo/decathlon-retail-outlet.jpg?s=612x612&w=0&k=20&c=xfIDmdCKNYM_44Qq6648kjc-hSmxCDzlGJ9t_BgN_0Q=" alt="Happy Customer 2">
+            <img src="https://media.istockphoto.com/id/1436054253/photo/decathlon-sports-store-decathlon-is-a-french-company-specializing-in-the-design-manufacture.jpg?s=612x612&w=0&k=20&c=NuCHMseNmOGaXlJqRrBxOE6iPzVNARouKynVNRSVc1E=" alt="Happy Customer 3">
+        </div>
+    </section>
+</body>
+</html>
